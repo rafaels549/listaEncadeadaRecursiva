@@ -31,6 +31,15 @@ public class Lista {
                  return inicio.impares();
              }
     }
+
+    public int maiorValor(){
+         if(inicio!=null){
+              Node maior = this.inicio;
+              return this.inicio.maiorValor(maior);  
+         }else{
+              return -1;
+         }
+    }
     
     public int size(){
         if(inicio==null){

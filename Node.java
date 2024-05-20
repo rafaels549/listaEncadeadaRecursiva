@@ -39,6 +39,23 @@ public class Node {
             }
         }
       }
+
+      public int maiorValor(Node maior){
+              if(prox!=null){
+              
+                     if(prox.x > maior.x ){
+                         
+                            maior.x = this.x;
+                         return prox.maiorValor(maior);
+                          
+                     }else{
+                          return prox.maiorValor(prox);
+                     }
+              }else{
+
+                  return maior.x;
+              }
+      }
     public int size(){
         int aux = 0;
         if(prox!=null){
@@ -47,9 +64,5 @@ public class Node {
         return 1 + aux;
     }
 
-    public void removerFim(){
-           if(prox!=null){
-                    
-           }
-    }
+   
 }
