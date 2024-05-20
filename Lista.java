@@ -24,6 +24,18 @@ public class Lista {
    
     }
 
+    public void imprimePares(){
+         if(this.inicio!=null){
+                this.inicio.imprimePares();
+         }
+    }
+
+    public void imprimeUltimo(){
+            if(this.inicio!=null){
+                  this.inicio.imprimeUltimo();
+            }
+    }
+
     public int impares(){
              if(inicio==null){
                    return 0;

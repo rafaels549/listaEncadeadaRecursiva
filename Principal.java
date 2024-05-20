@@ -7,7 +7,8 @@ public class Principal{
         l.add(40);
 
          System.out.println();
-         System.out.println(l.maiorValor());
+        
+         l.imprimeUltimo();
     }
 
 }

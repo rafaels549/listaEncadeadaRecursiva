@@ -53,6 +53,34 @@ public class Node {
                   return x;
               }
       }
+
+    public void imprimePares(){
+       
+               if(prox!=null){
+                  
+                     prox.imprimePares();
+                   
+               } 
+
+               if (this.x % 2 == 0) {
+                System.out.println(this.x);
+            }
+
+              
+
+    }
+
+
+
+    public void imprimeUltimo(){
+           if(prox!=null){
+                  prox.imprimeUltimo();
+           }else{
+              if(prox == null){
+              System.out.println(this.x);
+              }
+           }
+    }
     public int size(){
         int aux = 0;
         if(prox!=null){
