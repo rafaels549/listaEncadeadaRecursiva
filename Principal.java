@@ -1,13 +1,13 @@
 public class Principal{
     public static void main(String[] args) {
         Lista l = new Lista();
-        l.add(2);
-        l.add(3);
-        l.add(11);
-        l.add(10);
+        l.add(100);
+        l.add(20);
+        l.add(50);
+        l.add(40);
 
          System.out.println();
-         System.out.println(l.impares());
+         System.out.println(l.maiorValor());
     }
 
 }

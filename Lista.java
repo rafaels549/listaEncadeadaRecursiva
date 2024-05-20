@@ -34,10 +34,10 @@ public class Lista {
 
     public int maiorValor(){
          if(inicio!=null){
-              Node maior = this.inicio;
-              return this.inicio.maiorValor(maior);  
+              
+            return   this.inicio.maiorValor();
          }else{
-              return -1;
+             return this.inicio.maiorValor();
          }
     }
     

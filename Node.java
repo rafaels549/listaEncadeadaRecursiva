@@ -40,20 +40,17 @@ public class Node {
         }
       }
 
-      public int maiorValor(Node maior){
+      public int maiorValor(){
               if(prox!=null){
-              
-                     if(prox.x > maior.x ){
-                         
-                            maior.x = this.x;
-                         return prox.maiorValor(maior);
-                          
-                     }else{
-                          return prox.maiorValor(prox);
-                     }
+                int maiorProx = prox.maiorValor();
+                if (this.x > maiorProx) {
+                    return x;
+                } else {
+                    return maiorProx;
+                }
+               
               }else{
-
-                  return maior.x;
+                  return x;
               }
       }
     public int size(){
